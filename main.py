@@ -25,7 +25,6 @@ def process_queries(queries):
             contacts[cur_query.number] = cur_query.name
         elif cur_query.type == 'del':
             contacts.pop(cur_query.number, None)
-                    break
         else:
             result.append(contacts.get(cur_query.number, 'not found'))
     return result
